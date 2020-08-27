@@ -28,6 +28,21 @@
 <link href="css/responsive.css" rel="stylesheet">
 <script data-ad-client="ca-pub-3540367305904928" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script async defer type="text/javascript" src="https://sdk.audienceplay.com/audienceplay.js"></script>
+	
+	<script type="text/javascript" >
+window.onload=function(e){
+audiencePlay.set("acp15ghuzykfkeck4u7g"); //Generated API-Key
+audiencePlay.start("Customer Profile"); // Information group
+audiencePlay.add("u_string","CustomerName","xxxxx"); //(Data Type, Data Name, Data Value)
+audiencePlay.add("u_age","AgeOfCustomer","28"); //(Data Type, Data Name, Data Value)
+audiencePlay.add("String","TravelledToCity","Hyderabad"); //(Data Type, Data Name, Data Value)
+audiencePlay.add("HashedEmail","HashedEmail",audiencePlay.sha256("xxxxxxxx@yyyy.com"));//Converting to Sha256 Format by using hash() function 
+audiencePlay.add("HashedMobile","HashedMobile", "ahsdjahsjdhakjsdhjaskjdsajhasjdjkasabx"); //Sha256 Format
+audiencePlay.end();
+audiencePlay.send();
+}
+</script>
+               
 	</head>
 
 
